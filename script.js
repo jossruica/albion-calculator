@@ -55,4 +55,3 @@ async function calculate(itemId, quantity) {
     console.error(err);
     alert('No se pudo obtener información del objeto.');
   }
-}
