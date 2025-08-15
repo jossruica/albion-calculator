@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Crafteo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Calculadora de Crafteo</h1>
+    <div class="form">
+      <input type="text" id="item-input" placeholder="ID del objeto (ej. T4_BOW)" />
+      <input type="number" id="quantity-input" placeholder="Cantidad" min="1" value="1" />
+      <button id="calc-btn">Calcular</button>
+    </div>
+
+    <div id="results" class="hidden">
+      <div class="item-header">
+        <img id="item-image" alt="" />
+        <h2 id="item-name"></h2>
+      </div>
+      <table id="materials-table">
+        <thead>
+          <tr>
+            <th>Material</th>
+            <th>Cantidad</th>
+            <th>Precio unitario</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="total"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
